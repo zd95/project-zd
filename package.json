@@ -9,7 +9,10 @@
     "dopostcss": "postcss ./dist/CSS/index.css -o ./dist/CSS/index.min.css",
     "dowebpack": "webpack ./src/JS/index.js  ./dist/JS/index.js",
     "dobabel": "babel ./dist/JS/index.js -o ./dist/JS/index.min.js",
-    "docopy":"node ./util/copy.js"
+    "docopy":"node ./util/copy.js",
+
+    "dosassDev": "sass --watch ./src/CSS/index.scss  ./src/CSS/index.min.css",
+    "dowebpackDev": "webpack --watch ./src/JS/index.js  ./src/JS/index.min.js"
   },
   "keywords": [],
   "author": "",
