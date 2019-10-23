@@ -1,6 +1,6 @@
 //使用Babel编译该文件
-import "@babel/polyfill"
-import "./farme/farme"
+// import "@babel/polyfill"
+import "./frame/frame"
 import "./specialtyJS/home"
 import "./specialtyJS/course"
 import "./specialtyJS/works"
