@@ -5,6 +5,9 @@ import move from "./move/move"
 window.onload = function () {
   //获取头部导航元素
   var headNavs = document.querySelectorAll("#app .head .headMain .headNav .navItem");
+  var content = document.querySelector("#app .content");
+  var slideLi = content.querySelectorAll("#app .content .slideBox li ");
+  var icons = document.querySelectorAll("#app .content .iconBox .icon");
   var homeNav = headNavs[0];//获取头部第一个导航，页面打开时，默认让小箭头移动至该导航下
   //获取箭头指针
   var arrow = document.querySelector("#app .head .headMain .arrow");
@@ -12,19 +15,25 @@ window.onload = function () {
   //设置箭头指针的默认位置
   arrow.style.left = (homeNav.offsetLeft + homeNav.offsetWidth/2 - arrow.offsetWidth/2) + "px";
 
-  // 设置头部导航（点击导航时，导航突出显示，其他导航消除突出）
-  for (var i = 0; i < headNavs.length; i++) {
-    //将i的值设置为目标元素的属性，可以跨模块操作
-    headNavs[i].index = i;
-      headNavs[i].onclick = function () {
-        move(this.index);
-      }
-    
-  }
+ if(headNavs.length === icons.length){
+   // 设置头部导航（点击导航时，导航突出显示，其他导航消除突出）
+   for (var i = 0; i < headNavs.length; i++) {
+     //将i的值设置为目标元素的属性，可以跨模块操作
+     headNavs[i].index = i;
+     icons[i].index = i;
+     headNavs[i].onclick = icons[i].onclick = function () {
+       move(this.index);
+     }
 
+   }
+ }
+  //content区域    设置ul>li的高度
+  slideLi.forEach((itme)=>{
+    itme.style.height = content.offsetHeight + "px";
+  })
 
-
-
+//鼠标滚轮事件
+  
 
 
 
