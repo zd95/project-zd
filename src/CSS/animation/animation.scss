@@ -1,0 +1,78 @@
+//关键帧  动画名
+@keyframes move {
+  0%{
+    transform: translateX(0px) rotateY(0deg);
+  }
+  49%{
+    transform: translateX(-399px) rotateY(0deg);
+  }
+  50%{
+    transform: translateX(-400px) rotateY(180deg);
+  }
+  99%{
+    transform: translateX(1px) rotateY(179deg);
+  }
+  100%{
+    //从99%至100%瞬间转身
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+
+//home
+@keyframes leftHide {
+  0%{
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50%{
+    transform: translateX(-600px) translateZ(-500px) rotateY(60deg) scale(1);
+    visibility: visible;
+  }
+  100%{
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+    visibility: hidden;
+  }
+}
+@keyframes rightHide {
+  0%{
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50%{
+    transform: translateX(600px) translateZ(-500px) rotateY(-60deg) scale(1);
+    visibility: visible;
+  }
+  100%{
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+    visibility: hidden;
+  }
+}
+
+@keyframes rightShow {
+  0%{
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+    visibility: hidden;
+  }
+  50%{
+    transform: translateX(500px) translateZ(-1px) rotateY(-30deg) scale(.8);
+    visibility: visible;
+  }
+  100%{
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}
+@keyframes leftShow {
+  0%{
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+    visibility: hidden;
+  }
+  50%{
+    transform: translateX(-500px) translateZ(-1px) rotateY(30deg) scale(.8);
+    visibility: visible;
+  }
+  100%{
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}

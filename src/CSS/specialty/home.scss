@@ -1,0 +1,72 @@
+@import "../extend/extend";
+@import "../animation/animation";
+@import "../mixin/mixin";
+#app{
+  .content{
+    .slideBox{
+     & > .homeSlideLi{
+        .homeSlide{
+          .home-list{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            .home-li{
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              color: white;
+              font: 80px/520px "华文行楷";
+              text-align: center;
+              visibility: hidden;
+              &:nth-child(1){background-image:linear-gradient(45deg,rgba(0,128,0,.7),rgba(138,43,226,.5));}
+              &:nth-child(2){background:#95dc84;}
+              &:nth-child(3){background:#64b9d2;}
+              &:nth-child(4){background:rgba(0,0,0,.5);}
+              &.active{
+                visibility: visible;
+              }
+              &.leftHide{
+                transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+                visibility: hidden;
+                animation: leftHide linear 1 1s;
+              }
+              &.rightShow{
+                transform: translateX(0px) rotateY(0deg) scale(1);
+                visibility: visible;
+                animation: rightShow linear 1 1s;
+              }
+              &.rightHide{
+                transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(.6);
+                visibility: hidden;
+                animation: rightHide linear 1 1s;
+              }
+              &.leftShow{
+                transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+                visibility: visible;
+                animation: leftShow linear 1 1s;
+              }
+            }
+          }
+          & > .home-icons{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 0;//可以消除子元素的3像素留白
+            text-align: center;
+            .home-icon{
+              //设置为行内块，可以用 text-align: center;但会有3像素留白
+              display: inline-block;
+              margin: 10px;
+              @extend .icon-list;
+            }
+          }
+        }
+      }
+    }
+  }
+}
