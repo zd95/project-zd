@@ -239,13 +239,13 @@ img {
   box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-.commonText, #app .content .slideBox .courseLi .courseSlide .course-text {
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text, #app .content .slideBox .courseLi .courseSlide .course-text {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   font-size: 15px;
 }
 
-.commonTitle, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
   color: rgba(0, 0, 0, 0.6);
   font-size: 80px;
   line-height: 0.8;
@@ -274,13 +274,13 @@ img {
   box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-.commonText, #app .content .slideBox .courseLi .courseSlide .course-text {
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text, #app .content .slideBox .courseLi .courseSlide .course-text {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   font-size: 15px;
 }
 
-.commonTitle, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
   color: rgba(0, 0, 0, 0.6);
   font-size: 80px;
   line-height: 0.8;
@@ -448,13 +448,13 @@ img {
   box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-.commonText, #app .content .slideBox .courseLi .courseSlide .course-text {
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text, #app .content .slideBox .courseLi .courseSlide .course-text {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   font-size: 15px;
 }
 
-.commonTitle, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
   color: rgba(0, 0, 0, 0.6);
   font-size: 80px;
   line-height: 0.8;
@@ -569,13 +569,13 @@ img {
   box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-.commonText, #app .content .slideBox .courseLi .courseSlide .course-text {
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text, #app .content .slideBox .courseLi .courseSlide .course-text {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   font-size: 15px;
 }
 
-.commonTitle, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .courseLi .courseSlide .course-theme {
   color: rgba(0, 0, 0, 0.6);
   font-size: 80px;
   line-height: 0.8;
@@ -735,6 +735,376 @@ img {
   height: 191px;
   background: url("../../static/img/robot.png") no-repeat;
   animation: move 2s linear infinite;
+}
+
+.clearfix, #app .content .slideBox .courseLi .courseSlide .course-instagram .instagram-list, #app .content .slideBox .slideLi .worksSlide > .works-photo .works-list {
+  zoom: 1;
+}
+.clearfix:after, #app .content .slideBox .courseLi .courseSlide .course-instagram .instagram-list:after, #app .content .slideBox .slideLi .worksSlide > .works-photo .works-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.shadow, #app .content {
+  box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text, #app .content .slideBox .courseLi .courseSlide .course-text {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme, #app .content .slideBox .courseLi .courseSlide .course-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.icon-list, #app .content .iconBox .icon, #app .content .slideBox > .homeSlideLi .homeSlide > .home-icons .home-icon {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 -2px 5px 0 #000000, 2px 0 5px 0 green, 0 10px 5px rgba(0, 0, 0, 0.5), -2px 0 5px 0 blueviolet;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(-399px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-400px) rotateY(180deg);
+  }
+  99% {
+    transform: translateX(1px) rotateY(179deg);
+  }
+  100% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+@keyframes leftHide {
+  0% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(-600px) translateZ(-500px) rotateY(60deg) scale(1);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+}
+@keyframes rightHide {
+  0% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(600px) translateZ(-500px) rotateY(-60deg) scale(1);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+}
+@keyframes rightShow {
+  0% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(500px) translateZ(-1px) rotateY(-30deg) scale(0.8);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}
+@keyframes leftShow {
+  0% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(-500px) translateZ(-1px) rotateY(30deg) scale(0.8);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-theme {
+  margin: 50px;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-text {
+  width: 400px;
+  margin-left: 50px;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic {
+  box-sizing: content-box;
+  position: relative;
+  width: 260px;
+  height: 200px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(1.5);
+  transition: transform 1s;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic > ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic > ul > li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic > ul > li > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s left, 1s top;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic.about-pic1 {
+  position: absolute;
+  left: 750px;
+  top: 50px;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic.about-pic1 > .about-sp1 {
+  background: url("../../static/img/about2.jpg");
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic.about-pic2 {
+  position: absolute;
+  left: 600px;
+  top: 290px;
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic.about-pic2 > .about-sp2 {
+  background: url("../../static/img/about4.jpg");
+}
+#app .content .slideBox .slideLi > .aboutSlide > .about-pic:hover > span {
+  transform: scale(1);
+}
+
+.clearfix, #app .content .slideBox .courseLi .courseSlide .course-instagram .instagram-list, #app .content .slideBox .slideLi .worksSlide > .works-photo .works-list {
+  zoom: 1;
+}
+.clearfix:after, #app .content .slideBox .courseLi .courseSlide .course-instagram .instagram-list:after, #app .content .slideBox .slideLi .worksSlide > .works-photo .works-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.shadow, #app .content {
+  box-shadow: inset 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset 7px 0 10px 0 rgba(0, 0, 0, 0.6), 0 7px 10px 0 rgba(0, 0, 0, 0.8), inset -7px 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.commonText, #app .content .slideBox .slideLi .teamSlide > .team-text, #app .content .slideBox .courseLi .courseSlide .course-text, #app .content .slideBox .slideLi > .aboutSlide > .about-text {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.commonTitle, #app .content .slideBox .slideLi .teamSlide > .team-theme, #app .content .slideBox .courseLi .courseSlide .course-theme, #app .content .slideBox .slideLi .worksSlide > .works-theme, #app .content .slideBox .slideLi > .aboutSlide > .about-theme {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.icon-list, #app .content .iconBox .icon, #app .content .slideBox > .homeSlideLi .homeSlide > .home-icons .home-icon {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 -2px 5px 0 #000000, 2px 0 5px 0 green, 0 10px 5px rgba(0, 0, 0, 0.5), -2px 0 5px 0 blueviolet;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(-399px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-400px) rotateY(180deg);
+  }
+  99% {
+    transform: translateX(1px) rotateY(179deg);
+  }
+  100% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+@keyframes leftHide {
+  0% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(-600px) translateZ(-500px) rotateY(60deg) scale(1);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+}
+@keyframes rightHide {
+  0% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(600px) translateZ(-500px) rotateY(-60deg) scale(1);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+}
+@keyframes rightShow {
+  0% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(500px) translateZ(-1px) rotateY(-30deg) scale(0.8);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}
+@keyframes leftShow {
+  0% {
+    transform: translateX(0px) translateZ(-50px) rotateY(0deg) scale(0.6);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(-500px) translateZ(-1px) rotateY(30deg) scale(0.8);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0px) translateZ(0px) rotateY(0deg) scale(1);
+    visibility: visible;
+  }
+}
+#app .content .slideBox .slideLi .teamSlide > .team-theme {
+  float: left;
+  margin: 50px;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-text {
+  width: 400px;
+  float: right;
+  margin: 50px;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person {
+  width: 944px;
+  height: 448px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
+  margin: auto;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul {
+  width: 100%;
+  height: 100%;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li {
+  float: left;
+  width: 12.5%;
+  height: 100%;
+  background: url("../../static/img/team.png") no-repeat;
+  transition: opacity 0.5s;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(2) {
+  background-position: -118px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(3) {
+  background-position: -236px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(4) {
+  background-position: -354px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(5) {
+  background-position: -472px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(6) {
+  background-position: -590px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(7) {
+  background-position: -708px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .team-ul > .team-li:nth-child(8) {
+  background-position: -826px 0;
+}
+#app .content .slideBox .slideLi .teamSlide > .team-person > .bubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#app .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 996;
+}
+#app .mask .up {
+  background: skyblue;
+  height: 50%;
+  transition: height 1s;
+}
+#app .mask .down {
+  background: skyblue;
+  width: 100%;
+  height: 50%;
+  transition: height 1s;
+  position: absolute;
+  bottom: 0;
+}
+#app .mask .line {
+  width: 0px;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 997;
+  transition: width 1s;
 }
 
 #app {

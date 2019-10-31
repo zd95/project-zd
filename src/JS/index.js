@@ -1,17 +1,23 @@
 //使用Babel编译该文件
 // import "@babel/polyfill"
 import frameFn from "./frame/frame"
-import homeFn from "./specialtyJS/home"
+import maskFn from "./specialtyJS/mask"
+// import homeFn from "./specialtyJS/home"
+import teamFn from "./specialtyJS/tema"
 // import "./specialtyJS/course"
 // import "./specialtyJS/works"
-import "./specialtyJS/about"
-import "./specialtyJS/tema"
+import aboutFn from "./specialtyJS/about";
+// import "./specialtyJS/about"
+// import "./specialtyJS/tema"
 
 
 //执行业务逻辑
 window.onload = function(){
   frameFn();
-  homeFn();
+  // homeFn();
+  aboutFn();
+  teamFn();
+  maskFn()
 }
 
 //处理用户缩放
